@@ -27,7 +27,7 @@ module "gitlab_runner_operator" {
 
 ## Using with CDKTF
 
-Add this to cdktf.json
+Update cdktf.json to include the module:
 
 ```json
 {
@@ -37,6 +37,18 @@ Add this to cdktf.json
     }
   }
 }
+```
+
+Then run `cdktf get` to download the module.
+
+Use the module in your Typescript code:
+
+```typescript
+import {GitlabRunnerOperator} from "@gen/modules/gitlab-runner-operator";
+
+new GitlabRunnerOperator(this, "gitlab_runner_operator", {
+    namespace: "default",
+})
 ```
 
 ## Contributing
