@@ -31,11 +31,12 @@ Update cdktf.json to include the module:
 
 ```json
 {
-  "terraformModules": {
-    "gitlab_runner_operator": {
+  "terraformModules": [
+    {
+      "name": "gitlab-runner-operator",
       "source": "git::https://github.com/terraform-please/gitlab-runner-operator.git//v1.25.0"
     }
-  }
+  ]
 }
 ```
 
