@@ -354,7 +354,6 @@ resource "kubernetes_manifest" "serviceaccount_gitlab_runner_system_gitlab_runne
     "apiVersion" = "v1"
     "kind" = "ServiceAccount"
     "metadata" = {
-      "creationTimestamp" = null
       "name" = "gitlab-runner-sa"
       "namespace" = var.namespace
     }
@@ -366,7 +365,6 @@ resource "kubernetes_manifest" "role_gitlab_runner_system_gitlab_runner_app_role
     "apiVersion" = "rbac.authorization.k8s.io/v1"
     "kind" = "Role"
     "metadata" = {
-      "creationTimestamp" = null
       "name" = "gitlab-runner-app-role"
       "namespace" = var.namespace
     }
