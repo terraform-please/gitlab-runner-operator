@@ -362,7 +362,6 @@ resource "kubernetes_manifest" "serviceaccount_gitlab_runner_system_gitlab_runne
     "apiVersion" = "v1"
     "kind" = "ServiceAccount"
     "metadata" = {
-      "creationTimestamp" = null
       "labels" = {
         "app.kubernetes.io/created-by" = "gitlab-runner-operator"
         "app.kubernetes.io/managed-by" = "kustomize"
@@ -379,7 +378,6 @@ resource "kubernetes_manifest" "role_gitlab_runner_system_gitlab_runner_app_role
     "apiVersion" = "rbac.authorization.k8s.io/v1"
     "kind" = "Role"
     "metadata" = {
-      "creationTimestamp" = null
       "labels" = {
         "app.kubernetes.io/created-by" = "gitlab-runner-operator"
         "app.kubernetes.io/managed-by" = "kustomize"
