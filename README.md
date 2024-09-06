@@ -21,7 +21,7 @@ of your infrastructure using Terraform.
 
 ```hcl
 module "gitlab_runner_operator" {
-  source = "git::https://github.com/terraform-please/gitlab-runner-operator.git//v1.25.0"
+  source = "git::https://github.com/terraform-please/gitlab-runner-operator.git//v1.28.1"
 }
 ```
 
@@ -34,7 +34,7 @@ Update cdktf.json to include the module:
   "terraformModules": [
     {
       "name": "gitlab-runner-operator",
-      "source": "git::https://github.com/terraform-please/gitlab-runner-operator.git//v1.25.0"
+      "source": "git::https://github.com/terraform-please/gitlab-runner-operator.git//v1.28.1"
     }
   ]
 }
